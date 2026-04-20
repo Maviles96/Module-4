@@ -23,3 +23,13 @@ const loading = document.querySelector('.modal__overlay--loading');
        );
      })
 }
+
+let isModalOpen = false
+function togglemodal() {
+ if (isModalOpen) {
+  isModalOpen = false;
+  return document.body.classList.removel("modal--open");
+ }
+ isModalOpen = true
+  document.body.classList += "modal--open";
+}
